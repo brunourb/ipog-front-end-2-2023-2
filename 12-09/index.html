@@ -5,7 +5,29 @@
         <title></title>
     </head>
     <body>
+        <h1>Exemplo de eventos</h1>
+        <div onmouseover="executarFuncaoMouseOver()"
+             onmouseout="executarFuncaoMouseOut()"
+        >
+            Evento onMouseOver
+        </div>
+
+        <input 
+        type="text"
+         name="nome" 
+        onkeypress="capturarEventoTeclado(event)"/>
+<p>
+        <label for="txtSenha">Informe sua senha:</label>
+        <input type="text" id="txtSenha"
+        onchange="executarEventoForm(event)"/>
+
+        <label for="txtConfirmaSenha">Confirmação senha:</label>
+        <input type="text" id="txtConfirmaSenha"
+        onblur="validarSenha(this,event)"/>
+        
         <!--SCRIPT CUSTOMIZADO DO USUÁRIO-->
-        <script src="./js/12-09.js"></script>
+        <!--script src="./js/12-09.js"></script-->
+        <!--script src="./js/12-09-funcao.js"></script-->
+        <script src="./js/12-09-eventos.js"></script>
     </body>
 </html>
