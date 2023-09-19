@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <!--SEMPRE INSERIA O ARQUIVO DO JQUERY NO ÍNICIO DO CORPO HTML-->
+        <!--O insersão do arquivo pode ser via localhost (baseado na máquina ou via CND)-->
+        <!--Exemplo baseado na máquina (localhost)-->
+        <script src="./js/jquery_3.6.4_jquery.min.js"></script>
+        <!--Exemplo baseado no consulta de um arquivo via CDN-->
+        <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script-->
+
+    </head>
+    <body>
+
+        <h2>
+            <ul>
+                <!--li style="background-color: blue;">Exemplo de texto 1</li-->
+                <!--li i="xpto" style="background: local;">Exemplo de texto 1</li-->
+
+                <!--script>
+                    $("#xpto").css("background", "local");
+                </script-->
+
+                <li>Exemplo de texto 2</li>
+            </ul>
+        </h2>
+
+        <pre>
+            Texto que ser&aacute; manipulado;
+        </pre>
+
+        <form id="frmCadastro">
+            <div>
+                <label for="txtNome">Nome:</label>
+                <input type="text" id="txtNome" name="txtNome"
+                placeholder="Informe seu nome" 
+                aria-placeholder="Informe seu nome" required>
+            </div>
+            <div>
+                <label for="txtEmail">E-mail:</label>
+                <input type="text" id="txtEmail" name="txtEmail"
+                placeholder="Informe seu e-mail" 
+                aria-placeholder="Informe seu e-mail" required>
+            </div>
+
+            <button type="submit" id="btnEnviar">Enviar</button>
+            <button type="button" id="btnCancelar">Cancelar</button>
+
+        </form>
+
+        <!--html()-->
+        <div id="jqueryManipulacaoHtml" style="background-color: blanchedalmond;">
+            <ul>
+                <!--text()-->
+                <li id="texto">Valor do texto contido dentro da LI</li>
+            </ul>
+            <ul>
+                <!--input()-->
+                <input id="textoInput1" type="text" value="Texto de exemplo de input"/>
+            </ul>
+        </div>
+        <input id="textoInput" type="text" value="Texto de exemplo de input"/>
+
+        <div id="manipulacaoTexto" style="background-color: orange;">
+            <p id="p1">Texto de exemplo amarelo</p>
+        </div>
+
+        <div id="lista_pokemon" style="background-color: cadetblue;">
+            Lista de pokémons
+            <ol>
+            </ol>
+        </div>
+
+        <!--PULO DO GATO-->
+        <!-- Os arquivos dos quais terão função javascript que irão acessar o jquery,-->
+        <!-- precisam ser caregadas no final do arquivo-->
+        <script src="./js/exemplo-jquery.js"></script>
+        <script src="./js/exemplo-jquery-shorter.js"></script>
+    </body>
+</html>
