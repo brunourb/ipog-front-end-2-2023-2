@@ -2,6 +2,9 @@
 Classe de exemplo para utilizar o modo shorter do JQuery
 */
 
+console.log('Recuperando valor em função');
+console.log($("#txtNome").val());
+
 $(function(){
 
     //Esta funçao é idêntica a função document.ready pois carrega sempre no load da página

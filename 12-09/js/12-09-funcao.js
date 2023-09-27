@@ -30,3 +30,17 @@ console.log(` O valor do somatório é ${somatoria(2,3)}`);
 
 console.log(` O valor do somatório é ${calculo}`); //O valor do somatório é () => Math.pow(2,5)
 console.log(` O valor do somatório é ${calculo()}`); //32
+
+
+//JavaScript
+//recupera o valor do input do campo no formulário
+let nome = document.getElementById('#nome').value; 
+
+//JQuery
+//Precisamos definir uma função para 'ESCOPO' de acesso para obter os valores do formulário/dados a ser recuperado
+$("#frmCadastro").submit(function(event){ //defino escopo/ação
+    let nome = $('#nome').val(); //recupero a informação do input
+});
+
+
+

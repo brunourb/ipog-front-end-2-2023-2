@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>
+            Churrasc&atilde;o do IPOG
+        </title>
+        <script src="./js/jquery_3.6.4_jquery.min.js"></script>
+    </head>
+    <body>
+        <h1>Churrasc&atilde;o do IPOG</h1>
+        <form id="frmCadastro">
+            <div>
+                <label for="txtNome">Nome:</label>
+                <input type="text" id="txtNome" name="txtNome"
+                placeholder="Informe seu nome"
+                aria-placeholder="Informe seu nome" required>
+            </div>
+            <div>
+                <label for="txtTelefone">Telefone:</label>
+                <input type="tel" id="txtTelefone" name="txtTelefone"
+                placeholder="Informe seu telefone" 
+                aria-placeholder="Informe seu telefone" required>
+            </div>            
+            <hr>
+            <div>
+                <label for="txtTipoCorte">Escolha o tipo de corte:</label>
+                <select name="txtTipoCorte" id="txtTipoCorte">
+                    <option value="1">Pescoço</option>
+                    <option value="2">Acém</option>
+                    <option value="3">Peito</option>
+                    <option value="4">Paleta</option>
+                    <option value="5">Fraldinha</option>
+                    <option value="6">Ponta de Agulha</option>
+                    <option value="7">File Mignon</option>
+                    <option value="8">Filé de Costela</option>
+                    <option value="9">Contra Filé</option>
+                    <option value="10">Capa de Filé</option>
+                    <option value="11">Alcatra</option>
+                    <option value="12">Patinho</option>
+                    <option value="13">Coxão Duro</option>
+                    <option value="14">Coxão Mole</option>
+                    <option value="15">Lagarto</option>
+                    <option value="16">Músculo Dianteiro</option>
+                    <option value="17">Músculo Traseiro</option>
+                    <option value="18">Costela</option>
+                    <option value="19">Maminha</option>
+                    <option value="20">Picanha</option>
+                    <option value="21">Cupim</option>
+                </select>
+            </div>
+            <div>
+                <label for="txtQtdCarne">Quantidade de carne:</label>
+                <input type="number" id="txtQtdCarne" name="txtQtdCarne"
+                placeholder="Informe a quantidade de carne"
+                aria-placeholder="Informe a quantidade de carne" required> kg.
+            </div>
+            <hr>
+            <div>
+                <label for="txtBebidas">Bebidas:</label>
+                <input type="text" id="txtBebidas" name="txtBebidas"
+                placeholder="Informe o nome da bebida" 
+                aria-placeholder="Informe o nome da bebida" required>
+            </div>
+            <div>
+                <label for="txtTipoBebida">Escolha o tipo da bebida:</label>
+                <select id="txtTipoBebida">
+                    <optgroup label="Alcóolica">
+                        <option value="1">Cerveja</option>
+                        <option value="2">Whiskey</option>
+                        <option value="3">Saquê</option>
+                        <option value="4">Cachaça</option>
+                    </optgroup>
+                    <optgroup label="Não Alcóolica">
+                        <option value="5">Água</option>
+                        <option value="6">Suco</option>
+                        <option value="7">Energ&eacute;tico</option>
+                        <option value="8">Refrigerante</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label for="txtQtdBebida">Quantidade de bebida:</label>
+                <input type="number" id="txtQtdBebida" name="txtQtdBebida"
+                placeholder="Informe a quantidade de bebida"
+                aria-placeholder="Informe a quantidade de bebida" required>  lts.
+            </div>
+            <hr>
+            <button type="submit" id="btnEnviar">Enviar</button>
+            <button type="button" id="btnCancelar">Cancelar</button>
+        </form>
+        <script src="./js/churrasco.js"></script>
+    </body>
+</html>
