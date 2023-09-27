@@ -51,9 +51,17 @@
         }
     };
 
-    //console.log(pessoa);
+    //1. Recuperar a informação do localstorage
+    //11.1 Verificar se o localStorage em informação
+    //Estou inicializando o 'banco de dados' (localStorage, para verificar se ela existe)
+    if(localStorage.getItem('pessoas') === null || 
+    localStorage.getItem('pessoas') === '' || localStorage.getItem('pessoas') === undefined) {
+        var data = [];
+        localStorage.setItem('pessoas', JSON.stringify(data));
+    }
 
-    localStorage.setItem('pessoas',JSON.stringify(pessoa));
-    localStorage.setItem('pessoas','');
+    let dados = JSON.parse(localStorage.getItem('pessoas'));
+    dados.push(pessoa);
+    localStorage.setItem('pessoas',JSON.stringify(dados));
 
   });
